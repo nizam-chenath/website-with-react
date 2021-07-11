@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.display-flex {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: orange;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+header.dayMode {
+  background-color: orange;
+}
+
+header.nightMode {
+  background-color: black;
+}
+
+header .logo {
+  font-size: 18px;
+  background: black;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+header .nav a {
+  color: black;
+  display: block;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.hero {
+  padding: 20px;
+  background-color: lightskyblue;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 32px;
+  background: url(https://images.unsplash.com/photo-1604078175342-6d15d9429704?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80)
+    no-repeat center;
+  background-size: cover;
+}
+
+footer {
+  background-color: lightseagreen;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  margin: 20px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
