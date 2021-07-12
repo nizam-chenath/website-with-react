@@ -79,15 +79,87 @@ footer {
   padding: 20px;
   text-align: center;
 }
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
 
-.card {
-  margin: 20px;
 }
 
+.card {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+
 .card img {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   border-radius: 10px;
   margin-bottom: 12px;
   object-fit: cover;
+}
+.card h3{
+  margin-bottom: 10px;
+}
+.card p {
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.card button {
+  border-radius: 6px;
+   background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 16px;
+   padding: 10px;
+   width: 150px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 2px;
+}
+
+.card button:hover {
+  background-color: orange;
+}
+.card-container .card-flex{
+  flex: 3;
+}
+
+.card-container aside{
+  flex: 1;
+}
+.card.active {
+  background-color: aquamarine;
+}
+.card .icon{
+  width: 20px;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: translateY(-120%);
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.card.active button{
+  background-color: lightpink;
+}
+.card.active .icon{
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+aside img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+aside h2 {
+  margin-bottom: 20px;
 }
