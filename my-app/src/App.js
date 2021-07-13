@@ -13,7 +13,8 @@ import cardData from "./components/CardData";
 // A Functional Component
 function MyApp() {
 
-let [favImages, setFavImages] = useState([])
+let favorites = useState([])
+let [favImages, setFavImages] = favorites
   
 
 // get all the favorite items
@@ -24,9 +25,21 @@ function getFavImages (imgSrc) {
 //lets map each favorite images
 let userFavImages = favImages.map((imgSrc)=>{
   return(
+    <div className="favImage">
+      <i className="far fa-times-circle"
+        onClick={()=>{
+          removeFavImages(imgSrc)
+        }}  
+      ></i>
     <img src={imgSrc} alt="" />
+    </div>
   )
 })
+
+//let remove fav images
+function removeFavImages(imgSrc){
+  console.log(imgSrc)
+}
 
 
 
