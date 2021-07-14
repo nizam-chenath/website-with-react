@@ -38,7 +38,9 @@ let userFavImages = favImages.map((imgSrc)=>{
 
 //let remove fav images
 function removeFavImages(imgSrc){
-  console.log(imgSrc)
+  setFavImages([...favImages].filter((currentImg)=>{
+    return currentImg != imgSrc
+  }))
 }
 
 
