@@ -7,6 +7,7 @@ import CardData from "./components/CardData";
 
 import './style.css'
 import cardData from "./components/CardData";
+import { BsTrash } from "react-icons/bs";
 
 
 
@@ -26,11 +27,16 @@ function getFavImages (imgSrc) {
 let userFavImages = favImages.map((imgSrc)=>{
   return(
     <div className="favImage">
+       
       <i className="far fa-times-circle"
         onClick={()=>{
           removeFavImages(imgSrc)
         }}  
-      ></i>
+      > <p>
+      <BsTrash/>
+    </p> 
+      </i>
+
     <img src={imgSrc} alt="" />
     </div>
   )
@@ -75,6 +81,9 @@ function removeFavImages(imgSrc){
           <aside>
             <h2>Favorites</h2>
             {userFavImages}
+           
+            
+            
           </aside>
         </div>
       </div>

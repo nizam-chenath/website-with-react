@@ -136,9 +136,6 @@ footer {
 .card-container aside{
   flex: 1;
 }
-.card.active {
-  background-color: aquamarine;
-}
 .card .icon{
   width: 20px;
   height: auto;

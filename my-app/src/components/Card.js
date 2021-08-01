@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import heart from '../assets/heart-solid.svg';
 import App from "../App";
 
+
 function Card(props){
     let favorites = useState("Add to favorite"); //this will retun an array
     let activeClass = useState("");
